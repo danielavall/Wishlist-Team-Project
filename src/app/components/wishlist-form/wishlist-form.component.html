@@ -1,0 +1,64 @@
+<div class="form-box-outer">
+  <div class="form-box-inner">
+    <h2 class="font-rye">Ada Ide Kado Ulang Tahun?</h2>
+    <p class="subtitle">Bantu tim menyiapkan kejutan rahasia untuk teman ADL Jkt!</p>
+    <div class="success-alert" *ngIf="isSuccess">
+      ✅ Yeay! Ide kadomu berhasil dikirim secara anonim. Terima kasih!
+    </div>
+
+    <form [formGroup]="wishlistForm" (ngSubmit)="onSubmit()" autocomplete="off">
+      <!-- DROPDOWN SEARCHABLE -->
+      <div class="form-group custom-select-wrapper">
+        <label>Nama Teman</label>
+        <input
+          type="text"
+          formControlName="targetName"
+          placeholder="Ketik atau pilih nama teman..."
+          (focus)="showDropdown = true"
+          (blur)="hideDropdown()"
+          [class.invalid-input]="
+            wishlistForm.get('targetName')?.invalid && wishlistForm.get('targetName')?.touched
+          "
+        />
+
+        <ul class="dropdown-list" *ngIf="showDropdown && filteredMembers.length > 0">
+          <li *ngFor="let member of filteredMembers" (mousedown)="selectMember(member)">
+            {{ member }}
+          </li>
+        </ul>
+        <ul class="dropdown-list" *ngIf="showDropdown && filteredMembers.length === 0">
+          <li class="no-result">Anggota tidak ditemukan...</li>
+        </ul>
+
+        <div
+          class="error-msg"
+          *ngIf="wishlistForm.get('targetName')?.invalid && wishlistForm.get('targetName')?.touched"
+        >
+          Nama teman wajib dipilih!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Ide Barang / Hadiah</label>
+        <input
+          type="text"
+          formControlName="giftIdea"
+          placeholder="Masukkan ide barang impiannya..."
+          [class.invalid-input]="
+            wishlistForm.get('giftIdea')?.invalid && wishlistForm.get('giftIdea')?.touched
+          "
+        />
+        <div
+          class="error-msg"
+          *ngIf="wishlistForm.get('giftIdea')?.invalid && wishlistForm.get('giftIdea')?.touched"
+        >
+          Ide hadiah tidak boleh kosong!
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Mengirim Data...' : 'Kirim Ide Kado' }}
+      </button>
+    </form>
+  </div>
+</div>
