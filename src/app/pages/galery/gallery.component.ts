@@ -3,17 +3,26 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeeService } from '../../services/employee.service';
 import { Employee } from '../../models/employee.model';
+import * as XLSX from 'xlsx-js-style';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
   imports: [CommonModule, RouterModule],
+  styleUrls: ['./gallery.component.scss'],
   template: `
     <div class="gallery-page">
-      <div class="section-title-wrapper">
+
+      <!-- HEADER UTAMA -->
+      <div class="section-title-wrapper" style="margin-bottom: 15px;">
         <div class="capsule-outer">
           <div class="capsule-inner font-rye">WISHLIST BOARD KELUARGA ADL JKT</div>
         </div>
+      </div>
+
+      <!-- ACTION BAR DI BAWAH HEADER -->
+      <div class="action-bar">
+        <a class="link-download-excel" (click)="exportToExcel()">📥Unduh Data</a>
       </div>
 
       <div class="cards-grid">
@@ -25,7 +34,7 @@ import { Employee } from '../../models/employee.model';
         </div>
       </div>
 
-      <div class="btn-center-wrapper">
+      <div class="btn-center-wrapper gallery-footer">
         <button class="btn-lihat-semua" routerLink="/">❮ Kembali ke Beranda</button>
       </div>
     </div>
@@ -94,5 +103,50 @@ export class GalleryComponent implements OnInit {
       this.currentIndex++;
       this.selectedEmployee = this.allEmployees[this.currentIndex];
     }
+  }
+
+  exportToExcel(): void {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
+    const dateStr = `${dd}/${mm}/${yyyy}`;
+    const fileName = `Wishlist Board ADL Jakarta - ${dateStr}.xlsx`;
+
+    const excelData = this.allEmployees.map((emp, index) => ({
+      'No': index + 1,
+      'Nama Lengkap': emp.fullName,
+      'Nama Panggilan': emp.nickname,
+      'Makanan Favorit': emp.favFood,
+      'Tidak Disukai': emp.dislikeFood,
+      'Wishlist Kado': emp.wishlist,
+      'Usulan Kado (Teman)': emp.suggestedByFriends ? emp.suggestedByFriends.trim() : '-'
+    }));
+
+    const worksheet: XLSX.WorkSheet = XLSX.utils.aoa_to_sheet([
+      ['WISHLIST BOARD KELUARGA ADL JKT']
+    ]);
+
+    XLSX.utils.sheet_add_json(worksheet, excelData, { origin: 'A3' });
+
+    worksheet['!merges'] = [
+      { s: { r: 0, c: 0 }, e: { r: 0, c: 6 } }
+    ];
+
+    if (worksheet['A1']) {
+      worksheet['A1'].s = {
+        font: {
+          sz: 16,
+          bold: true
+        },
+        alignment: {
+          horizontal: 'center',
+          vertical: 'center'
+        }
+      };
+    }
+    const workbook: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Data Tim ADL');
+    XLSX.writeFile(workbook, fileName);
   }
 }

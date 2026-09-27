@@ -1,5 +1,36 @@
 .gallery-header {
+  position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* TEKS DOWNLOAD */
+.action-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
+}
+
+/* DESAIN TEKS DOWNLOAD */
+.link-download-excel {
+  color: #0A3C7B !important;
+  font-family: 'Edu SA Beginner', cursive !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+  cursor: pointer !important;
+  transition: color 0.2s ease !important;
+
+  &:hover {
+    color: #C29641 !important;
+  }
 }
 
 .gallery-footer {
