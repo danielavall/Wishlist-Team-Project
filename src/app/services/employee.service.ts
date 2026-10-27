@@ -7,13 +7,13 @@ import { Employee } from '../models/employee.model';
 export class EmployeeService {
   private mockData: Employee[] = [
     {
-      id: 1, fullName: 'Ahmad Deni Wahyudi', nickname: 'Deni', favFood: 'Sushi', dislikeFood: 'Seafood Mentah',
-      wishlist: 'Lego Architecture', suggestedByFriends: 'Voucher Belanja',
+      id: 1, fullName: 'Ahmad Deni Wahyudi', nickname: 'Deni', favFood: 'apapun harusnya suka', dislikeFood: 'ngga ada',
+      wishlist: 'earphone kabel dengan mic', suggestedByFriends: 'Voucher Belanja',
       bgImageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop'
     },
     {
-      id: 2, fullName: 'Ahmad Fahlepie', nickname: 'Lepie', favFood: 'Bebek Goreng', dislikeFood: 'Keju Biru',
-      wishlist: 'Keyboard Mechanical Varmilo', suggestedByFriends: 'Voucher Belanja',
+      id: 2, fullName: 'Ahmad Fahlepie', nickname: 'Lepie', favFood: 'segala hal tentang daging sapi (steak terutama), burger', dislikeFood: 'gaada yg penting edible dan gak terlalu pedas',
+      wishlist: 'Mobil 7-seater yang bisa bawa manusia dewasa', suggestedByFriends: 'Vacuum cleaner',
       bgImageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop'
     },
     {
@@ -37,8 +37,8 @@ export class EmployeeService {
       bgImageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop'
     },
     {
-      id: 7, fullName: 'Christian Iwan', nickname: 'Iwan', favFood: 'Martabak Telur', dislikeFood: 'Pare',
-      wishlist: 'Mesin Kopi Kapsul', suggestedByFriends: 'Voucher Belanja',
+      id: 7, fullName: 'Christian Iwan', nickname: 'Iwan', favFood: 'Bukan elak', dislikeFood: 'elak',
+      wishlist: 'Bukan elak', suggestedByFriends: 'Cash',
       bgImageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop'
     },
     {
@@ -57,8 +57,8 @@ export class EmployeeService {
       bgImageUrl: 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=600&auto=format&fit=crop'
     },
     {
-      id: 11, fullName: 'Jennifer Tan', nickname: 'Jenni', favFood: 'Nasi Goreng Spesial', dislikeFood: 'Bawang Mentah',
-      wishlist: 'Tas Selempang Eiger', suggestedByFriends: 'Tiket Liburan ke Bali',
+      id: 11, fullName: 'Jennifer Tan', nickname: 'Jenni', favFood: 'Sushi', dislikeFood: 'Bawang Mentah',
+      wishlist: 'Tempat sampah mobil', suggestedByFriends: 'Tiket Liburan ke Jogja',
       bgImageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop'
     },
     {
@@ -67,8 +67,8 @@ export class EmployeeService {
       bgImageUrl: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600&auto=format&fit=crop'
     },
     {
-      id: 13, fullName: 'Jesslyn Tanuwijaya', nickname: 'Jesslyn', favFood: 'Steak Wagyu', dislikeFood: 'Seledri',
-      wishlist: 'Voucher MAP', suggestedByFriends: 'Voucher Belanja',
+      id: 13, fullName: 'Jesslyn Tanuwijaya', nickname: 'Jesslyn', favFood: 'Pasta & sushi', dislikeFood: 'Minuman susu & sosis',
+      wishlist: 'Brush makeup eye set', suggestedByFriends: 'Voucher Belanja',
       bgImageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
     },
     {
