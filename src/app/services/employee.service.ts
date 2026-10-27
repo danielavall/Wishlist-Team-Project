@@ -9,102 +9,103 @@ export class EmployeeService {
     {
       id: 1, fullName: 'Ahmad Deni Wahyudi', nickname: 'Deni', favFood: 'apapun harusnya suka', dislikeFood: 'ngga ada',
       wishlist: 'earphone kabel dengan mic', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/deni.jpg'
     },
     {
       id: 2, fullName: 'Ahmad Fahlepie', nickname: 'Lepie', favFood: 'segala hal tentang daging sapi (steak terutama), burger', dislikeFood: 'gaada yg penting edible dan gak terlalu pedas',
       wishlist: 'Mobil 7-seater yang bisa bawa manusia dewasa', suggestedByFriends: 'Vacuum cleaner',
-      bgImageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/lepie.jpg'
     },
     {
       id: 3, fullName: 'Amzesmoro Sianturi', nickname: 'Amzes', favFood: 'Bakso Sapi', dislikeFood: 'Kismis',
       wishlist: 'Mouse Logitech MX Master', suggestedByFriends: 'Tiket Liburan ke Bali',
-      bgImageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/amzes.jpg'
     },
     {
       id: 4, fullName: 'Ananda Muhammad Al Aziz', nickname: 'Nanda', favFood: 'Es Krim Gelato', dislikeFood: 'Ikan Asin',
       wishlist: 'AirPods Pro', suggestedByFriends: 'Tiket Liburan ke Bali',
-      bgImageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/nanda.jpg'
     },
     {
       id: 5, fullName: 'Bonfilio Aldrino Sugiarto', nickname: 'Aldo', favFood: 'Nasi Padang', dislikeFood: 'Makanan Terlalu Manis',
       wishlist: 'Buku Self-Improvement', suggestedByFriends: 'Coffee Maker',
+      // bgImageUrl: 'assets/aldo.jpg'
       bgImageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop'
     },
     {
       id: 6, fullName: 'Callista Patricia Jojo', nickname: 'Callista', favFood: 'Bakso Sapi', dislikeFood: 'Keju Biru',
       wishlist: 'Voucher Kopi Starbucks', suggestedByFriends: 'Tiket Liburan ke Bali',
-      bgImageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/callista.jpg'
     },
     {
       id: 7, fullName: 'Christian Iwan', nickname: 'Iwan', favFood: 'Bukan elak', dislikeFood: 'elak',
       wishlist: 'Bukan elak', suggestedByFriends: 'Cash',
-      bgImageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/iwan.jpg'
     },
     {
       id: 8, fullName: 'Daniela Vallerine Gunawan', nickname: 'Ela', favFood: 'Salmon sushi, seblak, all sweets food', dislikeFood: 'Makanan berbau (jengkol, pete), sayur ^_^',
       wishlist: 'Pink keycaps, matcha powder', suggestedByFriends: '',
-      bgImageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/ela.jpg'
     },
     {
       id: 9, fullName: 'Excellent Zefanya Devona Syallom', nickname: 'Excel', favFood: 'Sate Ayam Madura', dislikeFood: 'Keju Biru',
       wishlist: 'Sepatu Lari Nike', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/excel.jpg'
     },
     {
       id: 10, fullName: 'Irwan Setiawan Kamil', nickname: 'Irwan', favFood: 'Gado-Gado', dislikeFood: 'Daging Kambing',
       wishlist: 'Sepatu Lari Nike', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/irwan.jpg'
     },
     {
       id: 11, fullName: 'Jennifer Tan', nickname: 'Jenni', favFood: 'Sushi', dislikeFood: 'Bawang Mentah',
       wishlist: 'Tempat sampah mobil', suggestedByFriends: 'Tiket Liburan ke Jogja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/jenni.jpg'
     },
     {
       id: 12, fullName: 'Jessie La Vonna Sanjaya', nickname: 'Jessiela', favFood: 'Es Krim Gelato', dislikeFood: 'Sayur Bayam',
       wishlist: 'Buku Desain UI/UX', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/jessiela.jpg'
     },
     {
       id: 13, fullName: 'Jesslyn Tanuwijaya', nickname: 'Jesslyn', favFood: 'Pasta & sushi', dislikeFood: 'Minuman susu & sosis',
       wishlist: 'Brush makeup eye set', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/jesslyn.jpg'
     },
     {
       id: 14, fullName: 'Kenzie Erico Tjandra', nickname: 'Kenzie', favFood: 'Ayam Geprek', dislikeFood: 'Keju Biru',
       wishlist: 'Skincare Set Laneige', suggestedByFriends: 'Coffee Maker',
-      bgImageUrl: 'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/kenzie.jpg'
     },
     {
       id: 15, fullName: 'Kevin Brave', nickname: 'Kevin', favFood: 'Soto Betawi', dislikeFood: 'Jeroan',
       wishlist: 'Mouse Logitech MX Master', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/kevin.jpg'
     },
     {
       id: 16, fullName: 'Laurensia Vilda Yovira', nickname: 'Vilda', favFood: 'Seafood Saus Padang', dislikeFood: 'Sayur Bayam',
       wishlist: 'Mesin Kopi Kapsul', suggestedByFriends: 'Coffee Maker',
-      bgImageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/vilda.jpg'
     },
     {
       id: 17, fullName: 'Ridho Andhika', nickname: 'Ridho', favFood: 'Gado-Gado', dislikeFood: 'Sayur Bayam',
       wishlist: 'Mouse Logitech MX Master', suggestedByFriends: 'Tiket Liburan ke Bali',
-      bgImageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/ridho.jpg'
     },
     {
       id: 18, fullName: 'Steven Jayadi Wiyanto', nickname: 'Jay', favFood: 'Pizza Margherita', dislikeFood: 'Durian',
       wishlist: 'Keyboard Mechanical Varmilo', suggestedByFriends: 'Voucher Belanja',
-      bgImageUrl: 'https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/jay.jpg'
     },
     {
       id: 19, fullName: 'Sylvia Krisnando', nickname: 'Sylvia', favFood: 'Steak Wagyu', dislikeFood: 'Makanan Pedas',
       wishlist: 'Tas Selempang Eiger', suggestedByFriends: 'Coffee Maker',
-      bgImageUrl: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/sylvi.jpg'
     },
     {
       id: 20, fullName: 'Yandi Wijaya', nickname: 'Yandi', favFood: 'Nasi Padang', dislikeFood: 'Pete',
       wishlist: 'Tas Selempang Eiger', suggestedByFriends: 'Coffee Maker',
-      bgImageUrl: 'https://images.unsplash.com/photo-1543610892-0b1f7e6d8c1c?q=80&w=600&auto=format&fit=crop'
+      bgImageUrl: 'assets/yandi.jpg'
     }
   ];
 
